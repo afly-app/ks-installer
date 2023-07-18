@@ -107,9 +107,9 @@ openpitrix_job_tag: "v3.3.2"
 openpitrix_job_repo: "{{ base_repo }}{{ namespace_override | default('kubesphere') }}/openpitrix-jobs"
 
 minio_repo: "{{ base_repo }}{{ namespace_override | default('minio') }}/minio"
-minio_tag: RELEASE.2019-08-07T01-59-21Z
+minio_tag: RELEASE.2023-07-11T21-29-34Z
 mc_repo: "{{ base_repo }}{{ namespace_override | default('minio') }}/mc"
-mc_tag: RELEASE.2019-08-07T23-14-43Z
+mc_tag: RELEASE.2023-07-11T23-30-44Z
 
 snapshot_controller_repo: "{{ base_repo }}{{ namespace_override | default('csiplugin') }}/snapshot-controller"
 snapshot_controller_tag: "v4.0.0"
@@ -234,7 +234,7 @@ auditing_webhook_tag: v0.2.0
 #ingress:
 nginx_ingress_controller_repo: "{{ base_repo }}{{ namespace_override | default('kubesphere') }}/nginx-ingress-controller"
 nginx_ingress_controller_tag: v1.3.1
-defaultbackend_repo: "{{ base_repo }}{{ namespace_override | default('mirrorgooglecontainers') }}/defaultbackend-amd64"
+defaultbackend_repo: "{{ base_repo }}{{ namespace_override | default('mirrorgooglecontainers') }}/defaultbackend-{{ image_arch }}"
 defaultbackend_tag: 1.4
 
 #metrics:
