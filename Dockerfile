@@ -1,4 +1,4 @@
-FROM kubespheredev/shell-operator:v1.0.0-beta.5-alpine3.16
+FROM kubespheredev/shell-operator:v1.0.0-beta.5-alpine
 
 ENV  ANSIBLE_ROLES_PATH /kubesphere/installer/roles
 WORKDIR /kubesphere
