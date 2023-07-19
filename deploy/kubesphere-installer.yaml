@@ -292,7 +292,7 @@ spec:
       serviceAccountName: ks-installer
       containers:
       - name: installer
-        image: guyzyl/ks-installer:master-dev-cf0b95b4
+        image: guyzyl/ks-installer:master-dev-aea9e75b
         imagePullPolicy: "Always"
         resources:
           limits:
